@@ -38,11 +38,7 @@ stateSpaceEq1 =[diff(l, t);
 %%
 % <html><h3>Question 3: Equilibrium of system</h3></html>
 %
-% Equilibrium will be at:
-% 
-% l = (m * g) / k
-% 
-% theta = 0
+% Equilibrium will be at l = 
 
 
 %%
@@ -50,6 +46,11 @@ stateSpaceEq1 =[diff(l, t);
 %
 % The equilibrium is stable, since the differential equations will approach
 % 0 over time
+
+%%
+% <html><h3>Question 5</h3></html>
+%
+
 
 %% Problem 2
 syms x(t);
