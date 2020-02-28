@@ -67,13 +67,14 @@ e_x_dot = A * e_x + B * e_u
 u_d = [v_d; omega_d];
 
 % A - Bk must be stable
-k = [1, 1, 1;
-     1, 1, 1];
+k = sym('k', [2, 3])
+
 
 u = -k * e_x + [v_d; omega_d];
 
 
 
+%% Part 4: Controller + Plotting Trajectory
 
 
 
