@@ -1,4 +1,4 @@
-function dz = ode_dubins(t,z,param)
+function dz = ode_dubins(t,z, theta,param)
 % use z for [x,y,theta]
 dz =zeros(3,1);
 
@@ -15,9 +15,11 @@ dz =zeros(3,1);
 % step 3: based on the relation between u and e_u, derive the
 % desired input v, and w.
 
-theta= z(3);
+v = param(1);
+omega = param(2);
 
-dz(1) = v*cos(theta);
-dz(2) = v*sin(theta);
-dz(3) = w;
+dz(1) = v * cos(z(1));
+dz(2) = v * sin(z(1));
+dz(3) = omega;
 end
+
